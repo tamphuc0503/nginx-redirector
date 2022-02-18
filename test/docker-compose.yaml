@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+ nginx-geoip2:
+    image: "netpowerno/qms:nginx"
+    ports:
+     - "80:80"
+     - "443:443"
+    volumes:
+     - .:/etc/nginx/conf.d
